@@ -1,0 +1,53 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel Emit
+#pragma kernel Update
+
+#define THREAD_X 128
+#define THREAD_Y 1
+#define THREAD_Z 1
+#define DT 0.065
+
+struct Params
+{
+    float3 emit;
+    float3 pos;
+    float3 vel;
+    float  life;
+    float2 size;
+    float4 color;
+};
+
+RWStructuredBuffer<Params> buffer; // GraphicsBuffer
+
+float b; // constant parameter
+
+float3 Step(float3 pos)
+{
+    float dxdt = sin(pos.y) - b * pos.x;
+    float dydt = sin(pos.z) - b * pos.y;
+    float dzdt = sin(pos.x) - b * pos.z;
+    return float3(dxdt, dydt, dzdt) * DT;
+}
+
+[numthreads(THREAD_X, THREAD_Y, THREAD_Z)]
+void Emit(uint id : SV_DispatchThreadID)
+{
+    Params p = buffer[id];
+    p.life = (float)id * -1e-05; // delay emit timing by id
+    p.pos = p.emit;
+    buffer[id] = p;
+}
+
+[numthreads(THREAD_X, THREAD_Y, THREAD_Z)]
+void Update(uint id : SV_DispatchThreadID)
+{
+    Params p = buffer[id];
+    p.life += DT;
+    
+    if (p.life > 0) {
+        p.vel = Step(p.pos);
+        p.pos += p.vel;
+    }
+    
+    buffer[id] = p;
+}
