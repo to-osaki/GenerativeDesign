@@ -4,7 +4,7 @@ using UnityEngine;
 
 static public class PoissonDiskSampling
 {
-	static public List<Vector3> GenerateXY(Vector2 size, float distance, int iterationLimit = 10)
+	static public List<Vector3> GetSamplesXY(Vector2 size, float distance, int iterationLimit = 10)
 	{
 		List<Vector3> points;
 		if (size.x > 0 && size.y > 0 && distance > 0 && iterationLimit > 0)
