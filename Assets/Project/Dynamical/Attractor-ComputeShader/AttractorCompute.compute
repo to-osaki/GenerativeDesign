@@ -1,6 +1,6 @@
 // Each #kernel tells which function to compile; you can have many kernels
 #pragma kernel Emit
-#pragma kernel Update
+#pragma kernel ThomasAttractorUpdate
 
 #define THREAD_X 128
 #define THREAD_Y 1
@@ -19,15 +19,7 @@ struct Params
 
 RWStructuredBuffer<Params> buffer; // GraphicsBuffer
 
-float b; // constant parameter
-
-float3 Step(float3 pos)
-{
-    float dxdt = sin(pos.y) - b * pos.x;
-    float dydt = sin(pos.z) - b * pos.y;
-    float dzdt = sin(pos.x) - b * pos.z;
-    return float3(dxdt, dydt, dzdt) * DT;
-}
+float4 constants; // constant parameter
 
 [numthreads(THREAD_X, THREAD_Y, THREAD_Z)]
 void Emit(uint id : SV_DispatchThreadID)
@@ -38,14 +30,21 @@ void Emit(uint id : SV_DispatchThreadID)
     buffer[id] = p;
 }
 
+float3 Step(float3 pos, float b)
+{
+    float dxdt = sin(pos.y) - b * pos.x;
+    float dydt = sin(pos.z) - b * pos.y;
+    float dzdt = sin(pos.x) - b * pos.z;
+    return float3(dxdt, dydt, dzdt) * DT;
+}
 [numthreads(THREAD_X, THREAD_Y, THREAD_Z)]
-void Update(uint id : SV_DispatchThreadID)
+void ThomasAttractorUpdate(uint id : SV_DispatchThreadID)
 {
     Params p = buffer[id];
     p.life += DT;
     
     if (p.life > 0) {
-        p.vel = Step(p.pos);
+        p.vel = Step(p.pos, constants.y);
         p.pos += p.vel;
     }
     

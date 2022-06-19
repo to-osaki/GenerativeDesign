@@ -25,11 +25,13 @@ public struct AttractorParticle
 }
 
 // https://github.com/IndieVisualLab/UnityGraphicsProgrammingBook3
-public class ThomasCyclicallySymmetricAttractor : MonoBehaviour
+public class AttractorController : MonoBehaviour
 {
 	#region Attractor
 	[SerializeField]
 	ComputeShader Compute;
+	[SerializeField]
+	string AttractorKernel = "ThomasAttractorUpdate";
 	[SerializeField]
 	int ParticleNum;
 
@@ -49,13 +51,12 @@ public class ThomasCyclicallySymmetricAttractor : MonoBehaviour
 	void InitCompute()
 	{
 		EmitKernelID = Compute.FindKernel("Emit");
-		UpdateKernelID = Compute.FindKernel("Update");
+		UpdateKernelID = Compute.FindKernel(AttractorKernel);
 		uint x, y, z;
 		Compute.GetKernelThreadGroupSizes(UpdateKernelID, out x, out y, out z);
 		GpuThreads = new Vector3Int((int)x, (int)y, (int)z);
 	}
 	#endregion
-
 
 	#region ThomasCyclicallySymmetricAttractor
 	[SerializeField]
@@ -66,9 +67,9 @@ public class ThomasCyclicallySymmetricAttractor : MonoBehaviour
 	Vector2 particleSize;
 
 	[SerializeField]
-	float constantB = 0.32899f;
+	Vector4 constants = new Vector4(0f, 0.32899f, 0f, 0f);
 
-	readonly int ConstantID = Shader.PropertyToID("b");
+	readonly int ConstantsID = Shader.PropertyToID("constants");
 
 	void InitBuffer()
 	{
@@ -99,7 +100,7 @@ public class ThomasCyclicallySymmetricAttractor : MonoBehaviour
 
 	void UpdateBuffer()
 	{
-		Compute.SetFloat(ConstantID, constantB);
+		Compute.SetVector(ConstantsID, constants);
 
 		Compute.SetBuffer(UpdateKernelID, BufferID, buffer);
 		int x = Mathf.CeilToInt((float)ParticleNum / GpuThreads.x);
