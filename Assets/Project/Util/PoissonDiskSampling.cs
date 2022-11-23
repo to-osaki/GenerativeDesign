@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,20 +17,20 @@ static public class PoissonDiskSampling
 		return points;
 	}
 
-	static public List<Vector3> GetSamplesXY(Vector2 size, float minDistance, System.Func<Vector2, float> funcDistance, int iterationLimit = 10)
+	static public List<Vector3> GetSamplesXY(Vector2 size, float minDistance, System.Func<int, Vector2, float> funcDistance, int iterationLimit = 10)
 	{
-		float DefaultFuncDistance(Vector2 _) => minDistance;
+		float DefaultFuncDistance(int n, Vector2 p) => minDistance;
 		funcDistance ??= DefaultFuncDistance;
 
 		// Fast Poisson Disk Sampling
 		// https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph07-poissondisk.pdf
-		// make grid
 		float cellSize = minDistance / Mathf.Sqrt(2);
 		int w = Mathf.CeilToInt(size.x / cellSize);
 		int h = Mathf.CeilToInt(size.y / cellSize);
 		Rect area = new Rect(0, 0, size.x, size.y);
 		List<Vector3> points = new List<Vector3>(w * h);
 		List<Vector2> actives = new List<Vector2>(w * h);
+		// make grid
 		var grid = new Vector2?[w + 1, h + 1];
 
 		// put first point randomly
@@ -53,7 +52,7 @@ static public class PoissonDiskSampling
 			for (int i = 0; i < iterationLimit; ++i)
 			{
 				// sample point randomly
-				float distance = funcDistance(target);
+				float distance = funcDistance(points.Count, target);
 				Debug.Assert(distance >= minDistance);
 				var sample = target + GetPointInCircle(distance, 2 * distance);
 				if (!area.Contains(sample)) { continue; }
@@ -108,7 +107,7 @@ static public class PoissonDiskSampling
 		return new Vector2Int((int)(p.x / cellSize), (int)(p.y / cellSize));
 	}
 
-	static private Vector2 GetPointInCircle(float minR, float maxR)
+	static Vector2 GetPointInCircle(float minR, float maxR)
 	{
 		float theta = Random.Range(0f, Mathf.PI * 2);
 		float r = Random.Range(minR, maxR);

@@ -1,0 +1,1109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!86 &8600000
+CustomRenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PatternsRenderTexture
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
+  m_Material: {fileID: 2100000, guid: f0b620082ca08af4599c287e3d0e708f, type: 2}
+  m_InitSource: 0
+  m_InitMaterial: {fileID: 2100000, guid: f0b620082ca08af4599c287e3d0e708f, type: 2}
+  m_InitColor: {r: 0.09433961, g: 0.08579565, b: 0.08579565, a: 1}
+  m_InitTexture: {fileID: 0}
+  m_UpdateMode: 2
+  m_InitializationMode: 0
+  m_UpdateZoneSpace: 0
+  m_CurrentUpdateZoneSpace: 0
+  m_UpdateZones:
+  - updateZoneCenter: {x: 0, y: 0, z: 0}
+    updateZoneSize: {x: 0, y: 0, z: 0}
+    rotation: 0
+    passIndex: 0
+    needSwap: 1
+  - updateZoneCenter: {x: 0.3822431, y: 0.7036854, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.35109207, y: 0.7687078, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.46028244, y: 0.7383908, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.35649812, y: 0.63115156, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.47793525, y: 0.6826843, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.41335693, y: 0.81901264, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.30095148, y: 0.76052034, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.27205795, y: 0.69862854, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.4101224, y: 0.64474046, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.30461252, y: 0.6192176, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.17501424, y: 0.72087353, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.20378546, y: 0.7744783, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.18707636, y: 0.63248837, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5236269, y: 0.61049205, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.39390573, y: 0.58296597, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.594089, y: 0.519649, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.48110986, y: 0.54776, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.61337084, y: 0.66418403, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.13447186, y: 0.7725879, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.11702552, y: 0.6576444, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.063460745, y: 0.6923361, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.20961365, y: 0.8751894, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.25865948, y: 0.81764656, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.2528633, y: 0.55760825, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.3235352, y: 0.8478417, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.34048545, y: 0.9191117, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.48666316, y: 0.8061112, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.54897064, y: 0.6885857, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5935414, y: 0.6106135, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.53544694, y: 0.49423522, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.40593058, y: 0.50884604, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.55070627, y: 0.5574395, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.4561601, y: 0.43493494, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.000229612, y: 0.6675194, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.17870235, y: 0.56196547, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.4285445, y: 0.8909654, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5776598, y: 0.8900663, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.56069785, y: 0.80376136, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.6488682, y: 0.7563241, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.6288563, y: 0.8274054, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.3086145, y: 0.53208613, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.3392469, y: 0.47990674, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.39322174, y: 0.4449268, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.39925373, y: 0.99108046, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5136729, y: 0.9095329, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.4757796, y: 0.6112545, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.57660717, y: 0.7465733, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.72476876, y: 0.7868618, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7343434, y: 0.7353772, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.066718295, y: 0.5970509, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.033778533, y: 0.74403167, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.14011812, y: 0.83640134, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.113185994, y: 0.72059, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.19267467, y: 0.49588484, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.28460822, y: 0.41119006, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.18919837, y: 0.33806914, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.24407859, y: 0.45927286, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.39328495, y: 0.37605712, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.18961295, y: 0.44345477, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.3436771, y: 0.3125701, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.2501321, y: 0.6383549, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.6563649, y: 0.5490347, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.6729009, y: 0.6231938, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.67470586, y: 0.6934886, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7708319, y: 0.68287265, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.29547793, y: 0.90222436, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.32475364, y: 0.99688065, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.23995955, y: 0.97453934, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.34324533, y: 0.42288277, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.48530525, y: 0.37497786, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.4017112, y: 0.29545477, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.46621123, y: 0.96718854, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.085355975, y: 0.8062317, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7400706, y: 0.5245171, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.82166666, y: 0.75626045, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.6004505, y: 0.4175197, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.49357224, y: 0.3039914, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5938004, y: 0.37317234, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.81792706, y: 0.53299254, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.8297333, y: 0.60441977, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.66110516, y: 0.49622342, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.68734807, y: 0.42719984, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.75857496, y: 0.6214797, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.071236804, y: 0.9346272, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.021261245, y: 0.83645487, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.14278775, y: 0.94268125, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.08135729, y: 0.48513392, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.109082036, y: 0.4008479, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.12159386, y: 0.34562737, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.20895496, y: 0.24573359, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.08458306, y: 0.28580925, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.24603277, y: 0.36752787, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.16095309, y: 0.24806407, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.0142035335, y: 0.3050854, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.08655854, y: 0.16273224, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.65067726, y: 0.98816305, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.54201555, y: 0.96348643, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.671486, y: 0.93009764, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.101784036, y: 0.055562295, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.20114475, y: 0.14135315, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.012107775, y: 0.15772942, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.036014438, y: 0.2135839, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.09611669, y: 0.23612037, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.15259, y: 0.19685993, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.03511624, y: 0.09566115, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.17340785, y: 0.091115035, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.6416577, y: 0.32137036, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7495117, y: 0.4497867, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.06331962, y: 0.35672694, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.025864683, y: 0.9287796, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.74052536, y: 0.84852445, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.89416903, y: 0.737725, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.82341677, y: 0.84032345, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.6700194, y: 0.37660733, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5474542, y: 0.3241175, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9221032, y: 0.51159316, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9024309, y: 0.5748316, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.29822358, y: 0.2550417, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.81418717, y: 0.48245788, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.95882744, y: 0.5942721, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.923838, y: 0.40215337, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.98705626, y: 0.43625095, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9905659, y: 0.5125577, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9027219, y: 0.84676313, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.898233, y: 0.6803424, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9180362, y: 0.32015398, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.84268516, y: 0.42715, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.8298538, y: 0.36023098, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9799001, y: 0.33444536, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9834006, y: 0.26882547, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9708606, y: 0.21938184, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.42990837, y: 0.2319577, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.42660213, y: 0.14814177, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.36472848, y: 0.20170224, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.49347624, y: 0.23937495, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5053519, y: 0.17223656, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.88438517, y: 0.20880628, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.96374166, y: 0.124345995, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.13778505, y: 0.5132528, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.0068716034, y: 0.38469017, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.84844005, y: 0.13859421, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9993832, y: 0.7406684, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.97086906, y: 0.65757775, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.83289295, y: 0.6584093, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.28747782, y: 0.317672, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5922161, y: 0.24349862, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7140472, y: 0.99151146, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.67952746, y: 0.85354954, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5329393, y: 0.102955244, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.6034507, y: 0.10458244, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.442857, y: 0.094040446, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5172973, y: 0.054152153, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.026574304, y: 0.9998991, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.25822422, y: 0.15094438, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5994182, y: 0.9875462, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7411884, y: 0.92024416, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.8810772, y: 0.26263034, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.70193493, y: 0.31094518, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.3504436, y: 0.06530368, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.46847028, y: 0.0012468174, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.35947913, y: 0.0069174543, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.25892103, y: 0.07816952, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.6309336, y: 0.04411248, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5868394, y: 0.015692912, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.2911366, y: 0.017271653, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.1856411, y: 0.022564087, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.056748524, y: 0.42037284, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.31374872, y: 0.12220761, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.66633356, y: 0.21523708, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7400966, y: 0.25331062, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.07394496, y: 0.8790753, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5409319, y: 0.41716245, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.66521144, y: 0.11363638, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7885541, y: 0.983805, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.8275257, y: 0.29748234, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9925268, y: 0.79756486, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.91369987, y: 0.79745674, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.3750968, y: 0.13870306, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.31702045, y: 0.18931699, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.102932364, y: 0.114676885, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9038287, y: 0.14623822, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.87327206, y: 0.061298303, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9953046, y: 0.030957803, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9410647, y: 0.018774487, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5989353, y: 0.16454118, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7124175, y: 0.04736709, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7629694, y: 0.16937518, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.77174604, y: 0.10334917, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.8205206, y: 0.22418001, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.77434, y: 0.36449254, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.72577494, y: 0.3738106, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.8257707, y: 0.00028713793, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7704359, y: 0.010734275, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.8452316, y: 0.9046173, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.0056810603, y: 0.54292655, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.4155596, y: 0.043671407, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.040202145, y: 0.035860315, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.124576144, y: 0.5666948, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9097197, y: 0.8991985, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.47346646, y: 0.4946924, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.93419355, y: 0.95921075, z: 0}
+    updateZoneSize: {x: 0.0625, y: 0.0625, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.84545416, y: 0.99561304, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9875167, y: 0.9000874, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9879462, y: 0.9936732, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.5171637, y: 0.8606829, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.9133816, y: 0.46447647, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7638533, y: 0.3139362, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.7113847, y: 0.16974679, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.17745516, y: 0.3911416, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  - updateZoneCenter: {x: 0.64650786, y: 0.27509466, z: 0}
+    updateZoneSize: {x: 0.03125, y: 0.03125, z: 0}
+    rotation: 0
+    passIndex: 1
+    needSwap: 1
+  m_UpdatePeriod: 0
+  m_ShaderPass: 0
+  m_CubemapFaceMask: 4294967295
+  m_DoubleBuffered: 1
+  m_WrapUpdateZones: 0

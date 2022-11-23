@@ -1,10 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CustomRenderTextureZoneUpdater
 {
-	public int DefaultUpdatePassIndex { get; set; } = 0;
+	public int DefaultUpdatePassIndex
+	{
+		get => m_tex.shaderPass;
+		set => m_tex.shaderPass = value;
+	}
+
+	public bool DisableDefaultUpdate { get; set; }
 
 	private readonly CustomRenderTexture m_tex;
 	private readonly List<CustomRenderTextureUpdateZone> m_zones = new(0);
@@ -19,11 +24,22 @@ public class CustomRenderTextureZoneUpdater
 		m_tex.Initialize();
 	}
 
-	public void Update()
+	public void Update(int count = 1)
 	{
 		m_tex.ClearUpdateZones();
-		ApplyRequiredZones();
-		m_tex.Update(1);
+
+		if (m_zones.Count == 0)
+		{
+			if (!DisableDefaultUpdate)
+			{
+				m_tex.Update(count);
+			}
+		}
+		else
+		{
+			ApplyRequiredZones();
+			m_tex.Update(count);
+		}
 	}
 
 	public void RequestUpdateZone(int passIndex, Vector2 center, Vector2 size, float rotation)
@@ -39,16 +55,17 @@ public class CustomRenderTextureZoneUpdater
 
 	private void ApplyRequiredZones()
 	{
-		if (m_zones.Count == 0) { return; }
-
 		var zones = new CustomRenderTextureUpdateZone[1 + m_zones.Count];
-
-		var defaultZone = new CustomRenderTextureUpdateZone();
-		defaultZone.needSwap = true;
-		defaultZone.passIndex = DefaultUpdatePassIndex;
-		defaultZone.rotation = 0f;
-		defaultZone.updateZoneCenter = new Vector2(0.5f, 0.5f);
-		defaultZone.updateZoneSize = new Vector2(1f, 1f);
+		// https://tips.hecomi.com/entry/2017/05/17/020037
+		var defaultZone = new CustomRenderTextureUpdateZone()
+		{
+			needSwap = true,
+			passIndex = DefaultUpdatePassIndex,
+			rotation = 0f,
+			// if DisableDefaultUpdate, set invalid zone
+			updateZoneCenter = DisableDefaultUpdate ? Vector2.zero : Vector2.one / 2f,
+			updateZoneSize = DisableDefaultUpdate ? Vector2.zero : Vector2.one,
+		};
 
 		zones[0] = defaultZone;
 		m_zones.CopyTo(0, zones, 1, m_zones.Count);

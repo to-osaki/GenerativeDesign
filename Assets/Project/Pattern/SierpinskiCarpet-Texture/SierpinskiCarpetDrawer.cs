@@ -52,7 +52,7 @@ public class SierpinskiCarpetDrawer : MonoBehaviour
 		for (int i = 0; i < Size.x; ++i)
 		{
 			m_row[i] = 1;
-			byte c = (byte)(255 * 1 / (P - 1));
+			// byte c = (byte)(255 * 1 / (P - 1));
 			m_colors[i] = ColorGradient.Evaluate((float)1 / (P - 1));
 		}
 		m_tex.SetPixels32(0, 0, Size.x, 1, m_colors);
@@ -74,7 +74,7 @@ public class SierpinskiCarpetDrawer : MonoBehaviour
 				left = n;
 
 				byte c = (byte)(255 * n / (P - 1));
-				m_colors[i] = ColorGradient.Evaluate((float)n / (P-1));
+				m_colors[i] = ColorGradient.Evaluate((float)n / (P - 1));
 			}
 			m_row[Size.x - 1] = left + top + right; // fill last cell
 			m_tex.SetPixels32(0, v, Size.x, 1, m_colors);
@@ -89,13 +89,17 @@ public class SierpinskiCarpetDrawer : MonoBehaviour
 	void OnDestroy()
 	{
 		Image.texture = null;
-		if (Application.isPlaying)
+
+		if (m_tex != null)
 		{
-			Destroy(m_tex);
-		}
-		else
-		{
-			DestroyImmediate(m_tex);
+			if (Application.isPlaying)
+			{
+				Destroy(m_tex);
+			}
+			else
+			{
+				DestroyImmediate(m_tex);
+			}
 		}
 	}
 }

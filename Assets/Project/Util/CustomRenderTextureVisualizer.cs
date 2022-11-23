@@ -7,6 +7,8 @@ public class CustomRenderTextureVisualizer : MonoBehaviour
 	[SerializeField]
 	public CustomRenderTexture texture;
 	[SerializeField]
+	public int defaultPassIndex = 0;
+	[SerializeField]
 	public int touchPassIndex = 1;
 	[SerializeField]
 	public Vector2 zoneSize = Vector2.one * 1 / 32;
@@ -25,7 +27,7 @@ public class CustomRenderTextureVisualizer : MonoBehaviour
 		public float value;
 	}
 
-	public void Reset()
+	public void Initialize()
 	{
 		m_updater.Initialize();
 	}
@@ -47,6 +49,8 @@ public class CustomRenderTextureVisualizer : MonoBehaviour
 	void Update()
 	{
 		UpdateZones();
+
+		m_updater.DefaultUpdatePassIndex = defaultPassIndex;
 		m_updater.Update();
 
 		ZoomCamera();

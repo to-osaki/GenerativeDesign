@@ -2,12 +2,13 @@ using UnityEngine;
 
 // https://daiki-yamanaka.hatenablog.com/entry/2013/07/13/163657
 [RequireComponent(typeof(MeshFilter))]
+[ExecuteAlways]
 public class ImageStipplingController : MonoBehaviour
 {
 	public enum ColorType
 	{
-		Gray = 0, 
-		R, G, B, 
+		Gray = 0,
+		R, G, B,
 	}
 
 	[SerializeField]
@@ -24,7 +25,7 @@ public class ImageStipplingController : MonoBehaviour
 	[ContextMenu(nameof(Generate))]
 	void Generate()
 	{
-		if(!Application.isPlaying)
+		if (!Application.isPlaying)
 		{
 			DestroyImmediate(m_mesh);
 		}
@@ -35,10 +36,14 @@ public class ImageStipplingController : MonoBehaviour
 		GenerateMesh();
 	}
 
-	// Start is called before the first frame update
+	private void OnValidate()
+	{
+		Generate();
+	}
+
 	void Start()
 	{
-		GenerateMesh();
+		Generate();
 	}
 
 	private void GenerateMesh()
@@ -62,7 +67,7 @@ public class ImageStipplingController : MonoBehaviour
 			}
 		}
 
-		var points = PoissonDiskSampling.GetSamplesXY(new Vector2(w, h), MinDistance, pos => table[(int)pos.x, (int)pos.y]);
+		var points = PoissonDiskSampling.GetSamplesXY(new Vector2(w, h), MinDistance, (idx, pos) => table[(int)pos.x, (int)pos.y]);
 		int[] indices = new int[points.Count];
 		for (int i = 0; i < points.Count; ++i)
 		{
